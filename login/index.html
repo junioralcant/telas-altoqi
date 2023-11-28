@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/tailwind.config.js"></script>
+</head>
+<body>
+  <div class="flex items-center justify-center bg-[url('../assets/images/bg.png')] bg-no-repeat bg-cover w-screen h-screen">
+    <form action="" class="flex items-center justify-center bg-white-full w-[30rem] h-[32rem] rounded-md bg-[url('../assets/images/bg-form.png')] bg-no-repeat bg-contain mx-5 md:mx-0">
+      <div class="w-3/4 px-2 mt-20">
+        <img src="../assets/images/brand.svg" alt="Logo">
+
+        <div class="mt-5">
+          <label class="text-xs text-gray-800" for="input-email">E-mail / código de cliente</label>
+          <input class="text-xs w-full py-2 pl-3 border-[1px] border-gray-400 rounded-[4px]" type="text" placeholder="Insira seu e-mail ou código de cliente" id="input-email">
+        </div>
+
+        <div class="mt-2">
+          <label class="text-xs text-gray-800" for="input-password">Senha</label>
+          <input class="text-xs w-full py-2 pl-3 border-[1px] border-gray-400 rounded-[4px]" type="password" placeholder="****************" id="input-password">
+        </div>
+
+        <div class="flex items-center mt-2">
+          <input type="checkbox" id="save-password">
+          <label class="text-xs ml-1 text-gray-550" for="save-password">Mantenha-me conectado</label><br>
+        </div>
+
+        <div class="flex items-center mt-6">
+          <button class="w-full h-9 bg-primary-500 rounded-[4px] text-xs text-white-full hover:bg-primary-700 transition-all" type="submit">Entrar</button>
+        </div>
+
+        <div class="flex items-center justify-center w-full mt-5 text-center">
+          <a href="/forgot-password" class="text-xs text-primary-500 hover:text-primary-700 transition-all">Esqueci minha senha</a>
+        </div>
+        
+        <div class="flex items-center justify-center w-full mt-5 text-center">
+          <a href="#" class="text-xs  transition-all">
+            Ainda não é cadastrado? 
+            <span class="text-primary-500 hover:text-primary-700 transition-all">Inscreva-se</span>
+          </a>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
